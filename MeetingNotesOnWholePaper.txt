@@ -1,0 +1,6 @@
+summarize results for each brand
+	-brand difference
+	-frequency difference
+	-frequency or power affects drift more?
+
+gantt chart
