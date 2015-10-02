@@ -1,0 +1,131 @@
+Research plan:
+-what should the frequencies be?  Common individual frequencies and band centers, ie Florescent light ballasts, FM, business comms, Wifi, Cell, industrial processes
+-what MCUs should be used? based on popularity and flexibility, ie a more flexible or newer family member of a popular chip may be a better choice, to maximize usefulness of results
+-what should the power levels be for each frequency?
+-field measurements of power levels for determining appropriate ones for testing maybe
+
+Timeline
+-should there be a figure of it?
+-determine frequencies and power levels, testing period, specific MCU models
+-find testing site, determine cost
+-design boards, send out for manufacturing
+-assign/hire personnel
+-assemble boards/hardware
+-perform tests
+-create report
+
+budget:
+-MCUs
+-boards
+-facility: rent? probably, find out how much that costs
+-Power: comes with facility?
+-Health & safety: can't microwave researchers/technicians
+-personnel? monitoring, documentation, setup, admin
+-research papers (for frequencies, power levels, MCUs to test, etc
+
+Background:
+-Clock source options and in-depth on internal oscillators
+-RF exposure environments
+
+
+Brian says....
+frequencies....pick em....
+it'll be in a faraday cage, blacked out?  Control will be in cage too (with no generator)
+temperature control specifics, how, what drift, what mitigation (climate control and precision measurement), chip temp vs ambient temp, internal heating, RF heating, light heating
+spaaaaaace... woot
+AM, FM, cell (900, 1800, 1900...), Wifi (2.4G, 5G)
+personnel stuff...I'll be the emperor of Japan
+
+
+
+Research plan:
+someone else should be able to fully reproduce the experiment with no further input from you
+no detailed personnel stuff
+
+MSP430, 1+ 32-bit MCU/DSC
+PIC12F???, Pic16F????, PIC18??? dsPIC33E????, PIC32MZ????
+
+
+calculate plausible power density based on Tx power , dBi, and sensible distances
+how to measure?  that shoiuld be defined already, research facilities
+
+Power levels:
+2.4GHz: 10cm, 1m, 10m WiFi, worst-case microwave oven
+5GHz: 10cm, 1m, 10m WiFi,
+WiFi: 4W max EIRP, 100mW max power at AP typical, rubber duck antenna 2.2dBi 2.4, 3.5dBi 5.
+degrades by 1/d^2....power density is [1/(4*pi*r^2)]*10^(g/10)
+
+
+https://www.tessco.com/yts/customerservice/techsupport/whitepapers/antennas.html
+18dBi for cell antennas
+used 40W per sector (3 sectors) for power output
+850 & 1900 MHz chosen due to usage by many carriers, and distance from WiFi & TV bands.
+
+UHF TV gain: 14dBi methinks, power 1MW
+http://www.americanradiohistory.com/Archive-NAB-Engineering/NAB-6th-Edition/TV-Antennas-NAB-engineering-Handbook-6th-Edition.pdf
+
+FM broadcast gain: 5dBi est, power 
+https://fmbroadcastantenna.com/dominator.html
+
+
+RP
+	Intro
+	Background/prep/facilities
+	Procedure
+	Issues and mitigation
+	
+RF Anechoic chamber	
+http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?tp=&arnumber=875567&isnumber=18905
+
+
+measure with frequency counter, based on clock-out pin
+or use a spectrum analyzer if needed - assign person with this skill
+prolly one at a time, to avoid them interfering with each other and if they can't test multiple devices at once (spatial consistency of power level)
+
+irradiate for 1 hour each to have adequate drift
+measure frequency continuously so we can have a graph of it over time
+
+diagram of board, maybe
+testing flowchart
+
+
+add stuff
+gonna meet 3 tomorrow
+
+
+Test Antenna - resonant dipole, about 2.15dbi gain at the middle, half-wave except 1MHz
+http://www.antenna-theory.com/antennas/dipole.php
+
+1MHz: 
+
+
+
+http://www.keysight.com/en/pd-799470-pn-N5181A/mxg-rf-analog-signal-generator?cc=US&lc=eng
+
+
+heierarchy
+levels from DoE....ya want that
+
+
+single ring per chamber, 1m diameter
+10 freq counters, equally spaced around the ring
+add this to research plan with numbers
+
+temp sensors on chips - best handling of that
+including controls? airflow through ring....nah, will be minimal heating
+
+
+1 test per control, don't sextuple count them
+
+
+Half-wave dipole:
+http://www.antenna-theory.com/antennas/dipole.php
+antenna-theory.com, 2015
+
+TV antennas:
+http://www.americanradiohistory.com/Archive-NAB-Engineering/NAB-6th-Edition/TV-Antennas-NAB-engineering-Handbook-6th-Edition.pdf
+H.E. Gihring, RCA. ca. 1967
+
+cell antennas:
+https://www.tessco.com/yts/customerservice/techsupport/whitepapers/antennas.html
+By Robert Wilson, TESSCO. 2010.

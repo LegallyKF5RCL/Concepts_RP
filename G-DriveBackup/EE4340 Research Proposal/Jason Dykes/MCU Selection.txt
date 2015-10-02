@@ -1,0 +1,33 @@
+MCU rules
+must have internal oscillator: that's what we're testing here
+must be an MCU: internal RAM and storage, may be capable of operating with external memory but must not require it
+		
+MCUs chosen based largely on diversity, different models within a family will have similar oscillators and thus similar performance under test.
+	
+Microchip
+PIC10F322 - 6 pin, 16MHz, ultra small, very cheap, high feature
+PIC16F1708 - 20 pin, 32MHz, most features available, new design, inexpensive
+PIC18F24K20 0- 28 pin, 64MHz, inexpensive, high feature
+dsPIC33EP128MC206 - 64 pin, 140MHz, good value, high feature
+PIC32MX450F128H - 64 pin, 100MHZ, high feature, high performance
+
+TI
+MSP430G2453 - very cheap, low power 16 bit MCU
+MSP430F6634 - 16 bit, 25MHz MCU, int osc
+MSP432P401R - low-end 32 bit ARM MCU, int osc
+F28M35H52C - 144 pin, 100MHz 32-bit DSC, int osc
+Hercules RM42L432 -384K flash, 32K RAM, 100MHz, 100 pin safety critical MCU, lock-step dual core, int osc
+
+NXP
+P89LPC925 - 80C51 based low power MCU, 8K flash, 256B RAM, int osc
+LPC812M101JD20 - Low power 32-bit ARM MCU, int osc
+LPC1315FBD48 - general-purpose 32-bit ARM MCU, int osc
+LPC1519JBD64 - midrange, motion-control oriented 32 bit ARM MCU, int osc
+LPC4078FBD100 - High-performance, 32-bit ARM MCU, 512K flash 96K RAM, int osc
+
+ST
+STM8L101F3 - low power, 8 bit MCU, int osc
+STM8S207C6 - mainstream 8 bit MCU, int osc
+STM32L152R8-A - low power 32-bit ARM MCU, 64K flash, 32K RAM, int osc
+STM32F101R8 - mainstream ST32 ARM Cortex M3 MCU, 64K flash, 10K RAM, int osc
+STM32F756IG - high end, 32 bit ARM MCU, int osc

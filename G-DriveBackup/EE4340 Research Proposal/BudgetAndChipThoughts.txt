@@ -1,0 +1,116 @@
+differnt companies 
+1. Microchip Technologiess
+2. Texas Instruments
+3. STMicroelectronics
+4. NXP Semiconductor
+
+5 different MCU numbers from each company.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%
+%%%%%
+why we choose the parts
+1 low power, 1 proformance, and 3 application based.
+data sheet for each MCU for tempurature. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+%%%%%%
+
+Microchip Techologies
+http://www.microchip.com/
+
+	A. leading performance 32 bit
+		1. PIC32MZ
+		2. PIC32MX
+
+	B. leadning performance 16 bit
+		1. PIC24F
+		2. PIC24H/E
+		3. dsPIC30F
+
+Texas Instruments
+http://www.ti.com/lsds/ti/microcontrollers_16-bit_32-bit/overview.page
+
+	A. performance MCU (Real-Time Control)
+		1. C2000 Delfino
+		2. C2000 Piccolo
+		3. C2000 InstaSPIN
+		4. C2000 F28x
+	B. Low-power MCU (ultra low power)
+		1. MSP430F1x
+		2. MSP430F2x
+		3. MSP430FRxx
+		4.MSP430G2x
+	C. performance MCU (Control + Automation)
+		1. TM4c129x
+		2. EK-TM4C129XL
+		3. F28M35
+
+STMicroelectronics
+
+	A. High Performance MCU (http://www.st.com/web/en/catalog/sense_power/FM2098/SC963/SS1690)
+		1. SPC546M
+		2. SPC564NE
+	B. Low Power application (http://www.st.com/web/en/catalog/sense_power/FM2098/SC963/SS1578)
+		1. SPC56B
+		2. SPC56C
+		3. SPC56D
+	C. Safty Critical App and Motor Control (http://www.st.com/web/en/catalog/sense_power/FM2098/SC963/SS1534)
+		1. SPC56P
+		2. SPC56L
+		3. SPC56S
+
+NXP Semiconductor
+http://www.nxp.com/products/microcontrollers/product_series/
+
+	A. Entry level
+		1. LPC800
+		2. LPC1100
+		3. LPC1200
+	B. High proformance 
+		1. LPC1300
+		2. LPC1500
+		3. LPC1700
+		4. LPC1800
+	C. 8/16 bit 
+		1. LPC900
+		2. OTP/ROM
+	D. application specific
+		1. EM783
+		2. JN516
+		3. QN902
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%
+%%
+
+nots on clock drift in MCU
+
+1. http://www.best-microcontroller-projects.com/ppm.html
+
+	A. This shows the accuracy and aging per 10 years of different kinds of material used.
+
+
+
+what are radio frequency emissions.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%
+
+
+possible equipment needed.
+
+1. wifi router
+2. radio wave generator that has differnt 
+3. custom boards taht are made to keep the clock source as consistant as possible.
+4. RF cage for controls
+5. make sure the RF generator doesnt affect the testing equipment
+6. lab facility to keep the temperature constant.
+7. 
